@@ -4,6 +4,7 @@ import org.scalaoverview.poo.classic.Personne
 import org.scalaoverview.poo.classic.PersonneSansConstruteur
 import org.scalaoverview.poo.classic.MonSingleton
 import org.scalaoverview.poo.classic.PersonneFactory
+import org.scalaoverview.poo.specscala.PatternMatching
 
 object Main {
 
@@ -36,6 +37,25 @@ object Main {
     // Scala intègre aussi le pattern Factory comme ici pour la création d'un objet personne.
     var newPersonne = PersonneFactory("Nom4","Prenom4",40);
     println(s"la personne 4 créée est ${newPersonne.nom} ${newPersonne.prenom}")
+    
+    // Le pattern matching
+    var maListe = List("un","deux","trois")
+    PatternMatching.printAllElem(maListe)
+    
+    // Le parcours de collections
+    // Ne récupérer que les positifs
+    val liste = List(-1,2,-3,4,-5,6)
+    val positifs = liste.filter(x => x > 0) // ou aussi liste.filter(_>0)
+    // Afficher tous les positifs incrémentés de 1
+    liste.filter(_>0).foreach(x => {println(x+1)})
+    // Affiche la somme des éléments de la liste
+    println(liste.reduceLeft((x,y)=>x+y)) // ou liste.sum :-)
+    // Affiche la somme des carrés pairs des éléments
+    println(liste.map(_^2).filter(_%2==0).reduceLeft(_+_))
+    // Réaliser un traitement en parallèle
+    (1 to 10).par.foreach(x => print (" " + x))
+    
+    
   }
 
 }

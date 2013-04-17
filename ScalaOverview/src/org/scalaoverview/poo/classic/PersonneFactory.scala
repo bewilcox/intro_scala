@@ -1,6 +1,6 @@
 package org.scalaoverview.poo.classic
 
-// A noter que ce singleton peut porter le même nom que l'object qu'il créé
+// A noter que ce singleton peut porter le même nom que l'object qu'il créé, on parle d'objet Compagnon
 object PersonneFactory {
   
   // Le nom apply est réservé. Cela permet de ne pas le préciser explicitement lors de l'appel à la factory
