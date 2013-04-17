@@ -69,18 +69,16 @@
 <!--                     DERBY                    -->
 <!-- ============================================ -->
 <!-- The JDBC Driver is in "derbyclient.jar". -->
-<!--
-	<db id = "0" 
-			name   = "DERBY - TelosysBookStore DB" 
-			driver = "org.apache.derby.jdbc.ClientDriver" 
-			url    = "jdbc:derby://localhost:1527/bookstore" 
-			isolationLevel = "" 
-			poolSize       = "10" >
-			    <property name="user"      value="root" />
-				<property name="password"  value="admin" />
-				<metadata catalog="" schema="ROOT" table-name-pattern="%" table-types="TABLE   VIEW  " />
-	</db>
--->
+<db id = "0" 
+		name   = "DERBY - TelosysBookStore DB" 
+		driver = "org.apache.derby.jdbc.ClientDriver" 
+		url    = "jdbc:derby://localhost:1527/bookstore" 
+		isolationLevel = "" 
+		poolSize       = "10" >
+		    <property name="user"      value="root" />
+			<property name="password"  value="admin" />
+			<metadata catalog="" schema="ROOT" table-name-pattern="%" table-types="TABLE   VIEW  " />
+</db>
 
 <!-- ============================================ -->
 <!--                    SQLSERVER                     -->

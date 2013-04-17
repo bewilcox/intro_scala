@@ -3,5 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/utilisateurs/bewilcox/Documents/Technique/Telosys/BookstoreDB_2.0_Derby10.3/BookstoreDB_v2/lib/derbyclient.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
