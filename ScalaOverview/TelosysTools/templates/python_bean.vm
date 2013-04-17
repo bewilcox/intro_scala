@@ -1,4 +1,4 @@
-${SHARP} Screen Context Data class 
+${SHARP} Python class for table ${beanClass.sqlTable} 
 ${SHARP} Created on $today.date ( Time $today.time )
 
 
@@ -8,7 +8,7 @@ ${SHARP}
  
 class ${beanClass.name}:
 	
-     ${SHARP} Default constructor.
+	${SHARP} Default constructor.
 	def __init__(self):
 		pass
      
